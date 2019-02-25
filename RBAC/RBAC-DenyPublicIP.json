@@ -1,0 +1,18 @@
+{
+    "Name":  "DenyPublicIP",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Will not allow Public IP addresses",
+    "Actions":  [
+                    "*"
+                ],
+    "NotActions":  [
+
+                       "Microsoft.Network/publicIPAddresses/write",
+                       "Microsoft.Network/publicIPAddresses/join/action"
+ 
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/<Subscription-ID>"
+                         ]
+}

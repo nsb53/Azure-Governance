@@ -1,0 +1,36 @@
+{
+    "Name":  "NetworkContributor",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Lets you manage internal networks, but not create network components that connect to the Internet.",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.Network/*",
+                    "Microsoft.ResourceHealth/availabilityStatuses/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Support/*"
+                ],
+    "NotActions":  [
+                       "Microsoft.Network/VirtualNetworkGateways/write",
+                       "Microsoft.Network/VirtualNetworkGateways/generatevpnclientpackage/action",
+                       "Microsoft.Network/VirtualNetworkGateways/generatevpnprofile/action",
+                       "Microsoft.Network/VirtualNetworkGateways/setvpnclientipsecparameters/action",
+                       "Microsoft.Network/Connections/write",
+                       "Microsoft.Network/routeTables/write",
+                       "Microsoft.Network/routeTables/delete",
+                       "Microsoft.Network/routeTables/routes/write",
+                       "Microsoft.Network/routeTables/routes/delete",
+                       "Microsoft.Network/vpnGateways/write",
+                       "Microsoft.Network/vpnGateways/vpnConnections/write",
+                       "Microsoft.Network/virtualwans/write",
+                       "Microsoft.Network/publicIPAddresses/write",
+                       "Microsoft.Network/publicIPAddresses/join/action",
+                       "Microsoft.Network/expressRouteCircuits/*",
+                       "Microsoft.Network/expressRouteCrossConnections/*"
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/<Subscription-ID>"
+                         ]
+}

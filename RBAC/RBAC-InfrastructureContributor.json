@@ -1,0 +1,33 @@
+﻿{
+    "Name":  "InfrastructureContributor",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Lets you manage everything except access to resources, and network components that can connect to the Internet.",
+    "Actions":  [
+                    "*"
+                ],
+    "NotActions":  [
+                       "Microsoft.Authorization/*/Delete",
+                       "Microsoft.Authorization/*/Write",
+                       "Microsoft.Authorization/elevateAccess/Action",
+                       "Microsoft.Network/VirtualNetworkGateways/write",
+                       "Microsoft.Network/VirtualNetworkGateways/generatevpnclientpackage/action",
+                       "Microsoft.Network/VirtualNetworkGateways/generatevpnprofile/action",
+                       "Microsoft.Network/VirtualNetworkGateways/setvpnclientipsecparameters/action",
+                       "Microsoft.Network/Connections/write",
+                       "Microsoft.Network/routeTables/write",
+                       "Microsoft.Network/routeTables/delete",
+                       "Microsoft.Network/routeTables/routes/write",
+                       "Microsoft.Network/routeTables/routes/delete",
+                       "Microsoft.Network/vpnGateways/write",
+                       "Microsoft.Network/vpnGateways/vpnConnections/write",
+                       "Microsoft.Network/virtualwans/write",
+                       "Microsoft.Network/publicIPAddresses/write",
+                       "Microsoft.Network/publicIPAddresses/join/action",
+                       "Microsoft.Network/expressRouteCircuits/*",
+                       "Microsoft.Network/expressRouteCrossConnections/*"
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/<Subscription-ID>"
+                         ]
+}

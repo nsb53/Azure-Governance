@@ -1,0 +1,21 @@
+﻿{
+    "Name":  "AzureSQLContributor",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Lets you manage SQL servers and databases, but not access to them. ",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.ResourceHealth/availabilityStatuses/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Sql/locations/*/read",
+                    "Microsoft.Sql/servers/*"
+                ],
+    "NotActions":  [
+
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/<Subscription-ID>"
+                         ]
+}

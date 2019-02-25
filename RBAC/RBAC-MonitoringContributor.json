@@ -1,0 +1,32 @@
+{
+    "Name":  "MonitoringContributor",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Can read all monitoring data and update monitoring settings.",
+    "Actions":  [
+                    "*/read",
+                    "Microsoft.Insights/AlertRules/*",
+                    "Microsoft.Insights/components/*",
+                    "Microsoft.Insights/DiagnosticSettings/*",
+                    "Microsoft.Insights/eventtypes/*",
+                    "Microsoft.Insights/LogDefinitions/*",
+                    "Microsoft.Insights/MetricDefinitions/*",
+                    "Microsoft.Insights/Metrics/*",
+                    "Microsoft.Insights/Register/Action",
+                    "Microsoft.Insights/webtests/*",
+                    "Microsoft.Insights/actiongroups/*",
+                    "Microsoft.Insights/metricalerts/*",
+                    "Microsoft.OperationalInsights/workspaces/intelligencepacks/*",
+                    "Microsoft.OperationalInsights/workspaces/savedSearches/*",
+                    "Microsoft.OperationalInsights/workspaces/search/action",
+                    "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
+                    "Microsoft.OperationalInsights/workspaces/storageinsightconfigs/*",
+                    "Microsoft.Support/*"
+                ],
+    "NotActions":  [
+
+                   ],
+    "AssignableScopes":  [
+                            "/subscriptions/<Subscription-ID>"   
+                         ]
+}

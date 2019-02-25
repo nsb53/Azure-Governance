@@ -1,0 +1,27 @@
+{
+    "Name":  "StorageContributor",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Lets you manage Azure storage including Managed Disks, Storage Accounts and Snapshots",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.Insights/diagnosticSettings/*",
+                    "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
+                    "Microsoft.ResourceHealth/availabilityStatuses/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Storage/*",
+                    "Microsoft.Compute/disks/*",
+                    "Microsoft.Compute/snapshots/*",
+                    "Microsoft.Compute/virtualMachines/convertToManagedDisks/action",
+                    "Microsoft.Compute/locations/diskOperations/read",
+                    "Microsoft.Support/*"
+                ],
+    "NotActions":  [
+
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/<Subscription-ID>"
+                         ]
+}

@@ -1,0 +1,36 @@
+{  
+   "if":{  
+      "field":"type",
+      "In":[  
+         "Microsoft.Network/publicIPAddresses",
+         "Microsoft.Devices/IotHubs",
+         "Microsoft.Network/expressRouteCircuits",
+         "Microsoft.Network/expressRouteCrossConnections",
+         "Microsoft.Network/localNetworkGateways",
+         "Microsoft.AzureStack/operations",
+         "Microsoft.AzureStack/registrations",
+         "Microsoft.AzureStack/registrations/customerSubscriptions",
+         "Microsoft.AzureStack/registrations/products",
+         "Microsoft.Cache/Redis",
+         "Microsoft.Cache/locations/operationResults",
+         "Microsoft.ClassicCompute/domainNames",
+         "Microsoft.ClassicCompute/domainNames/slots",
+         "Microsoft.ClassicCompute/domainNames/slots/roles",
+         "Microsoft.ClassicCompute/virtualMachines",
+         "Microsoft.ClassicInfrastructureMigrate/classicInfrastructureResources",
+         "Microsoft.ClassicNetwork/networkSecurityGroups",
+         "Microsoft.ClassicNetwork/reservedIps",
+         "Microsoft.ClassicNetwork/virtualNetworks",
+         "Microsoft.ClassicNetwork/virtualNetworks/remoteVirtualNetworkPeeringProxies",
+         "Microsoft.ClassicNetwork/virtualNetworks/virtualNetworkPeerings",
+         "Microsoft.ClassicStorage/storageAccounts",
+         "Microsoft.CognitiveServices/accounts",
+         "Microsoft.CognitiveServices/locations",
+         "Microsoft.CognitiveServices/locations/checkSkuAvailability",
+         "Microsoft.CognitiveServices/operations"
+      ]
+   },
+   "then":{  
+      "effect":"audit"
+   }
+}

@@ -1,0 +1,25 @@
+{
+    "Name":  "SecurityContributor",
+    "ID":"",
+    "IsCustom":  true,
+    "Description":  "Lets you manage security components, security policies and virtual machines ",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.ClassicCompute/*/read",
+                    "Microsoft.ClassicCompute/virtualMachines/*/write",
+                    "Microsoft.ClassicNetwork/*/read",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.ResourceHealth/availabilityStatuses/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Security/*",
+                    "Microsoft.Support/*"
+                ],
+    "NotActions":  [
+
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/<Subscription-ID>"
+
+                         ]
+}
